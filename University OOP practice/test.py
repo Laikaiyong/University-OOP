@@ -12,5 +12,5 @@ def test(student_one):
 
 lecturer_one = Lecturer('AP908011', 'Alexander', 36, 3, 'Cyber Security')
 
-lecturer_one.teach_course("Augmented Reality")
+lecturer_one.swap_course("Augmented Reality")
 print(lecturer_one.course_taught)
