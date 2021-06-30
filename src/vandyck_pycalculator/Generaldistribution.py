@@ -1,5 +1,4 @@
 from .Distribution import Distribution
-from collections import Counter
 
 
 class General(Distribution):
@@ -24,14 +23,20 @@ class General(Distribution):
                 float / int / string(no mode): mode of the data set
 
         """
-        data = Counter(self.data)
-        get_mode = dict(data)
-        mode = [k for k, v in get_mode.items() if v == max(list(data.values()))]
+        counts = dict()
+        data_list = self.data
 
-        if len(mode) == len(self.data):
+        for data in data_list:
+            data = str(data)
+            counts[data] = counts.get(data, 0) + 1
+
+        mode = [int(k) for k, v in counts.items()
+                if v == max(list(counts.values()))]
+
+        if len(mode) == len(data_list):
             self.mode = "No mode found"
         else:
-            self.mode = mode
+            self.mode = mode[0]
 
         return self.mode
 
@@ -48,11 +53,11 @@ class General(Distribution):
         data_list = self.data
         data_list.sort()
 
-        if len(self.data) % 2 == 0:
-            median_one = data_list[len(self.data)//2]
-            median_two = data_list[len(self.data)//2 - 1]
+        if len(data_list) % 2 == 0:
+            median_one = data_list[len(data_list)//2]
+            median_two = data_list[len(data_list)//2 - 1]
             self.median = (median_one + median_two)/2
         else:
-            self.median = data_list[len(self.data)//2]
+            self.median = data_list[len(data_list)//2]
 
         return self.median
