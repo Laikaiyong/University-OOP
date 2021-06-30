@@ -6,7 +6,7 @@ It is able to be downloaded at PyPi: vandyck-pycalculator<br/><br/>
 Search in Link: [PyPi Website](https://pypi.org/)<br/>
 Exact Package Link: [vancalculator Library](https://pypi.org/project/vancalculator/0.0.1/)<br/>
 Or<br/>
-`pip install vandyck-pycalculator`<br/><br/>
+`pip install vancalculator`<br/><br/>
 
 Github Link: [vancalculator-Package](https://github.com/Laikaiyong/Vandyck-Pycalculator-Package)<br/><br/>
 
