@@ -2,7 +2,7 @@
 
 This project is developed to fullfil the requirement of Udacity AWS Machine Learning Foundations Course.<br/>
 This is an Object Oriented Programming Project developed in Python build for the calculation of mode, median, Gaussian and binomial distribution.<br/><br/>
-It is able to be downloaded at PyPi: vandyck-pycalculator<br/><br/>
+It is able to be downloaded at PyPi: vancalculator<br/><br/>
 Search in Link: [PyPi Website](https://pypi.org/)<br/>
 Exact Package Link: [vancalculator Library](https://pypi.org/project/vancalculator/0.0.1/)<br/>
 Or<br/>
